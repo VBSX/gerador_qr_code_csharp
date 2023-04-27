@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -89,6 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="qrcode.ico" />
+    <None Include="Resources\qrcode.png" />
+    <None Include="Resources\qrcode.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -65,7 +65,6 @@
             this.label_message_to_user.Size = new System.Drawing.Size(488, 40);
             this.label_message_to_user.TabIndex = 1;
             this.label_message_to_user.Text = "Coloque o texto que sera convertido para QrCode";
-            this.label_message_to_user.Click += new System.EventHandler(this.label_message_to_user_Click);
             // 
             // textBox_user_input
             // 
@@ -78,7 +77,6 @@
             this.textBox_user_input.Size = new System.Drawing.Size(488, 24);
             this.textBox_user_input.TabIndex = 2;
             this.textBox_user_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox_user_input.TextChanged += new System.EventHandler(this.textBox_user_input_TextChanged);
             // 
             // pictureBox_for_qr_code
             // 
@@ -90,7 +88,6 @@
             this.pictureBox_for_qr_code.TabIndex = 3;
             this.pictureBox_for_qr_code.TabStop = false;
             this.pictureBox_for_qr_code.Visible = false;
-            this.pictureBox_for_qr_code.Click += new System.EventHandler(this.pictureBox_for_qr_code_Click);
             // 
             // panel1
             // 
@@ -137,14 +134,14 @@
             this.button_save_qr_code.Visible = false;
             this.button_save_qr_code.Click += new System.EventHandler(this.button_save_qrcode_Click);
             // 
-            // Form1
+            // QrCodeGeneratorByText
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 597);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "QrCodeGeneratorByText";
+            this.Text = "QrCode Generator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_for_qr_code)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

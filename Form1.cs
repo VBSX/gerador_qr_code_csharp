@@ -20,6 +20,9 @@ namespace gerador_qr_code
         public QrCodeGeneratorByText()
         {
             InitializeComponent();
+            Bitmap png = new Bitmap(global::gerador_qr_code.Properties.Resources.qrcode);
+            Icon icone = Icon.FromHandle(png.GetHicon());
+            this.Icon = icone;
         }
         private void button_gerar_qr_code_Click(object sender, EventArgs e)
         {
@@ -63,7 +66,7 @@ namespace gerador_qr_code
         }
             private void botao_visitar_git_Click(object sender, EventArgs e)
             {
-                string url = "https://github.com/VBSX/filtrar_input";
+                string url = "https://github.com/VBSX/gerador_qr_code_csharp";
                 Process.Start(url);
             }
     }
